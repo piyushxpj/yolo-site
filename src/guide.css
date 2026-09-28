@@ -144,3 +144,11 @@
  .current-guide .menu-row { height: 9vh; min-height: 48px; }
  .current-guide .menu-option { font-size: clamp(36px, 7.5vh, 64px); }
 }
+
+.current-guide .site-header > .wordmark,
+.current-guide .site-header > .header-spark,
+.current-guide .site-header > .menu-toggle {
+  -webkit-user-select: none;
+  user-select: none;
+}
+.current-guide .header-spark { -webkit-user-drag: none; pointer-events: none; }

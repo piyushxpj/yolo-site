@@ -86,7 +86,7 @@ export default function Menu({ open, onClose }) {
     <dialog ref={dialog} className="menu-page" id="site-navigation" aria-label="Brand guide menu" onCancel={event => { event.preventDefault(); onClose(); }}>
       <div className="menu-header site-header flex items-center justify-between">
         <a className="wordmark" href="#top" onClick={event => { event.preventDefault(); navigate('top'); }} aria-label="Yolo brand guide home">Yolo</a>
-        <img className="header-spark" src="/assets/yolo-spark.svg" alt="" width="49.47" height="50" />
+        <img draggable={false} className="header-spark" src="/assets/yolo-spark.svg" alt="" width="49.47" height="50" />
         <button className="menu-toggle menu-close" onClick={onClose} aria-label="Close navigation" autoFocus>
           <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M7 7 27 27M27 7 7 27" /></svg>
         </button>
