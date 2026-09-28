@@ -3,6 +3,7 @@
 ## 2026-09-28
 
 ### Polished
+- Replaced seven large page PNGs with responsive WebP images and began loading below-fold artwork early at low priority. Originals remain in the asset ZIP.
 - Added a bottom-of-menu Download assets button with a verified ZIP of 33 artwork and font files.
 - Added Visual Language after the font specimens with all four supplied images, and updated its menu destination.
 - Added the supplied six-plush-mascot image directly below the animated eye grid, preserving its full proportions.

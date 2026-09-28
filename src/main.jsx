@@ -27,7 +27,7 @@ function App() {
             Download assets
           </a>
         </div>
-        <img src="/assets/brand-hero.png" alt="Yolo's colorful plush mascot gang" fetchPriority="high" />
+        <img src="/assets/brand-hero-1280.webp" srcSet="/assets/brand-hero-640.webp 640w, /assets/brand-hero-1280.webp 1280w, /assets/brand-hero-1600.webp 1600w" sizes="(max-width: 767px) 112vw, 73vw" decoding="async" alt="Yolo's colorful plush mascot gang" fetchPriority="high" />
       </section>
       <section className="guide-purpose" aria-label="Our purpose">
         <p className="guide-intro">Everyone has a take. Few show the work. On YOLO, you find a thesis with real proof behind it, make it yours, and trade it across markets. The credit goes to whoever called it. Trade anything. Together.</p>
@@ -42,8 +42,8 @@ function App() {
           <div className="guide-expressions guide-card" id="mascot" tabIndex="-1" role="group" aria-label="Yolo mascot expressions">
             {['orange','green','yellow','blue','red','purple'].map((color, index) => <Mascot key={color} color={color} index={index} />)}
           </div>
-          <div className="guide-plush guide-card"><img src="/assets/brand-plush-expressions.png" alt="Six plush Yolo mascots in orange, green, yellow, blue, red, and purple with different eye expressions" width="3840" height="2160" loading="lazy" /></div>
-          <div className="guide-characters guide-card"><img src="/assets/brand-characters.png" alt="Purple Yolo mascot holding a phone and orange Yolo mascot with folded arms" loading="lazy" /></div>
+          <div className="guide-plush guide-card"><img src="/assets/brand-plush-expressions-1280.webp" srcSet="/assets/brand-plush-expressions-640.webp 640w, /assets/brand-plush-expressions-1280.webp 1280w, /assets/brand-plush-expressions-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 48px), (max-width: 1440px) calc(100vw - 160px), 1280px" decoding="async" alt="Six plush Yolo mascots in orange, green, yellow, blue, red, and purple with different eye expressions" width="3840" height="2160" loading="eager" fetchPriority="low" /></div>
+          <div className="guide-characters guide-card"><img src="/assets/brand-characters-1280.webp" srcSet="/assets/brand-characters-640.webp 640w, /assets/brand-characters-1280.webp 1280w, /assets/brand-characters-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 48px), (max-width: 1440px) calc(100vw - 160px), 1280px" decoding="async" width="2560" height="1384" alt="Purple Yolo mascot holding a phone and orange Yolo mascot with folded arms" loading="eager" fetchPriority="low" /></div>
         </section>
         <Colors />
         <Typography />
@@ -54,7 +54,7 @@ function App() {
             ['Conviction Needs A Reason, surrounded by colorful plush shapes', 3840, 2160],
             ['Show the Work. Trade Anything Together, in colorful blocks surrounded by plush shapes', 3840, 2160],
             ['Yolo billboard with a purple mascot and the headline The take is only the beginning', 1672, 941],
-          ].map(([alt, width, height], index) => <div className="guide-card" key={index}><img src={`/assets/visual-language-${index + 1}.png`} alt={alt} width={width} height={height} loading="lazy" /></div>)}
+          ].map(([alt, width, height], index) => <div className="guide-card" key={index}><img src={`/assets/visual-language-${index + 1}-1280.webp`} srcSet={[640, 1280, 1600].map(size => `/assets/visual-language-${index + 1}-${size}.webp ${size}w`).join(', ')} sizes="(max-width: 900px) calc(100vw - 48px), (max-width: 1440px) calc(100vw - 160px), 1280px" decoding="async" alt={alt} width={width} height={height} loading="eager" fetchPriority="low" /></div>)}
         </section>
       </div>
     </main>

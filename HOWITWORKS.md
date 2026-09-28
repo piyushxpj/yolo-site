@@ -13,3 +13,5 @@ Logo and mascot copy buttons are removed. `Mascot.jsx` renders the original vect
 Run `npm run dev` for the local server and `npm run build` to produce `dist`. No backend is required.
 
 The menu footer includes a Download assets link to `/downloads/yolo-brand-assets.zip`, containing the local artwork and both fonts. Regenerate it after asset changes with `python3 scripts/package-assets.py`.
+
+Page artwork uses 640/1280/1600px WebP variants generated with `python3 scripts/optimize-images.py` (requires cwebp). Original PNGs remain downloadable. Below-fold images start fetching early at low priority; the hero has high priority.
