@@ -22,10 +22,10 @@ function App() {
       <section className="guide-hero" aria-label="Brand Guidelines">
         <div className="guide-hero-copy">
           <h1>Brand<br />Guidelines</h1>
-          <a className="menu-download" href="/downloads/yolo-brand-assets.zip" download="yolo-brand-assets.zip">
+          <button className="menu-download" type="button" disabled title="Assets coming soon">
             <DownloadIcon />
             Download assets
-          </a>
+          </button>
         </div>
         <img src="/assets/brand-hero-1280.webp" srcSet="/assets/brand-hero-640.webp 640w, /assets/brand-hero-1280.webp 1280w, /assets/brand-hero-1600.webp 1600w" sizes="(max-width: 767px) 112vw, 73vw" decoding="async" alt="Yolo's colorful plush mascot gang" fetchPriority="high" />
       </section>
