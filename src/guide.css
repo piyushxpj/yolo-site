@@ -1,0 +1,146 @@
+.current-guide { --guide-gap: clamp(24px, 2.78vw, 40px); background: #f5f5f5; }
+.current-guide main p { color: inherit; }
+.current-guide .menu-page { background: transparent; overflow: hidden; }
+.current-guide .menu-header { position: relative; z-index: 1; }
+.menu-viewport { position: absolute; inset: 70px 0 0; overflow: hidden; }
+.menu-panel { position: relative; height: 100%; overflow: auto; background: #f5f5f5; }
+.current-guide .menu-options { top: calc(max(180px, 26.333dvh) - 70px); }
+.current-guide .site-header { height: 70px; padding-inline: clamp(20px, 3.47vw, 50px); background: #000; color: #fff; }
+.current-guide .site-header > .wordmark { font-size: 28px; color: #fff; }
+.current-guide .site-header > .header-spark { width: 31.24px; height: 31.57px; top: 19.21px; }
+.current-guide .site-header > .menu-toggle { color: #fff; }
+.current-guide .site-header > .menu-toggle svg { width: 24px; height: 24px; }
+.current-guide .site-header > .menu-toggle svg path { stroke: #fff; }
+.guide-hero { position: relative; height: calc(100svh - 70px); min-height: 480px; background: #fff; overflow: hidden; }
+.guide-hero-copy { position: absolute; z-index: 1; top: clamp(40px, 5.56vw, 80px); left: 5.56%; display: flex; flex-direction: column; align-items: flex-start; gap: 28px; }
+.guide-hero h1 { font-family: 'Alte Haas Grotesk', sans-serif; font-weight: 700; font-size: clamp(54px, 6.25vw, 90px); line-height: .93; letter-spacing: -.01em; }
+.guide-hero > img { position: absolute; width: 72.3%; height: auto; right: -6.6%; bottom: calc(-11% - 12px); }
+.guide-purpose { width: calc(100% - 100px); max-width: 1340px; margin: 60px auto; }
+.guide-intro { font-family: 'Alte Haas Grotesk', sans-serif; font-weight: 700; font-size: clamp(26px, 2.78vw, 40px); line-height: 1.42; letter-spacing: -.01em; text-box-trim: none; }
+.guide-principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 11px; margin-top: 60px; }
+.guide-principles article { min-height: clamp(240px, 21.6vw, 311px); padding: 24px; border-radius: 20px; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; gap: 30px; background: #9b56ff; }
+.guide-principles article:nth-child(2) { background: #2c93ff; }
+.guide-principles article:nth-child(3) { background: #ff7f38; }
+.guide-principles h2 { font-size: clamp(24px, 2.22vw, 32px); line-height: 1.1; }
+.guide-principles p { font-size: 20px; line-height: 1.3; }
+.guide-content { width: calc(100% - 160px); max-width: 1280px; margin: 0 auto; padding-bottom: 60px; display: flex; flex-direction: column; gap: 60px; }
+.guide-logo, .guide-colors, .current-guide .typography-section { display: flex; flex-direction: column; gap: var(--guide-gap); }
+.guide-heading { display: flex; justify-content: space-between; gap: 32px; }
+.guide-heading h2 { font-size: clamp(32px, 3.47vw, 50px); line-height: 1.2; letter-spacing: -.01em; }
+.guide-heading p { width: 49%; flex-shrink: 0; font-size: clamp(18px, 1.67vw, 24px); line-height: 1.63; text-box-trim: none; }
+.guide-card { position: relative; background: #fff; border: 0; border-radius: 30px; overflow: hidden; }
+.guide-lockup { aspect-ratio: 1280 / 692; display: grid; place-items: center; container-type: inline-size; }
+.guide-lockup > div { display: flex; align-items: center; gap: 2.34cqw; }
+.guide-lockup img { width: 14.69cqw; }
+.guide-lockup span { font-family: 'Alte Haas Grotesk', sans-serif; font-weight: 700; font-size: 15.625cqw; line-height: 1.1; letter-spacing: -.01em; text-box-trim: trim-both; text-box-edge: cap alphabetic; }
+.guide-expressions { display: grid; grid-template-columns: repeat(3, 1fr); padding: 5.3% 4%; gap: 40px 5%; }
+.guide-expressions > div { position: relative; display: grid; place-items: center; padding: 16px; }
+.guide-expressions svg { width: 85%; aspect-ratio: 1; border-radius: 50%; background: #000; }
+.guide-expressions .copy-button { width: 32px; height: 32px; }
+.guide-characters img { display: block; width: calc(100% + 4px); max-width: none; height: auto; margin: -2px; }
+.guide-plush img { display: block; width: 100%; height: auto; }
+.guide-colors .color-palette { height: 378px; }
+.guide-colors .color-card { flex-grow: 151.67; border-radius: 20px; }
+.guide-colors .color-card.is-expanded { flex-grow: 310; }
+.current-guide .type-card { height: auto; aspect-ratio: 1280 / 522; border: 0; border-radius: 30px; container-type: inline-size; }
+.current-guide .type-name { top: 40px; left: 40px; font-size: clamp(26px, 3.125cqw, 40px); }
+.current-guide .type-specimen { left: 40px; top: 124px; bottom: auto; width: 60%; max-width: none; font-size: clamp(18px, 2.5cqw, 32px); line-height: 1.33; }
+.current-guide .type-watermark { top: 47%; left: 50%; transform: translateX(-50%); font-size: 25.78cqw; line-height: 1.1; color: #ff7f38; white-space: nowrap; }
+.current-guide .type-uncut .type-watermark { font-size: 27.34cqw; color: #20d684; }
+@media (max-width: 900px) {
+ .guide-content { width: calc(100% - 48px); }
+ .guide-purpose { width: calc(100% - 48px); }
+ .guide-heading { flex-direction: column; gap: 20px; }
+ .guide-heading p { width: 100%; }
+ .guide-principles { margin-top: 32px; }
+ .guide-principles article { padding: 20px; gap: 20px; }
+ .guide-principles p { font-size: 17px; }
+ .current-guide .type-specimen { top: 100px; }
+}
+@media (max-width: 767px) {
+ .current-guide .menu-panel { display: flex; flex-direction: column; padding: 24px 20px; }
+ .current-guide .menu-options { position: relative; top: auto; left: auto; width: 100%; transform: none; margin-block: auto; display: flex; flex-direction: column; gap: clamp(8px, 2.5dvh, 20px); }
+ .current-guide .menu-row { height: auto; min-height: 48px; align-items: center; }
+ .current-guide .menu-option { max-width: 100%; font-size: clamp(26px, 7.8vw, 40px); line-height: 1.2; padding: 8px 0; text-box-trim: none; }
+ .current-guide .menu-decoration { display: none; }
+ .guide-hero { height: 510px; min-height: 0; max-height: calc(100svh - 70px); }
+ .guide-hero-copy { top: 32px; left: 24px; gap: 24px; }
+ .guide-hero h1 { font-size: 52px; }
+ .guide-hero > img { width: 112%; right: -15%; bottom: calc(-7% - 12px); }
+ .guide-purpose { margin-block: 36px; }
+ .guide-principles { grid-template-columns: 1fr; gap: 12px; }
+ .guide-principles article { min-height: 190px; }
+ .guide-content { gap: 40px; }
+ .guide-card { border-radius: 20px; }
+ .guide-lockup { aspect-ratio: 1; }
+ .guide-lockup img { width: 20cqw; }
+ .guide-lockup span { font-size: 23cqw; }
+ .guide-lockup > div { gap: 4cqw; }
+ .guide-expressions { grid-template-columns: repeat(2, 1fr); padding: 24px 10px; gap: 24px 8px; }
+ .guide-expressions > div { padding: 16px 0; }
+ .guide-expressions svg { width: 85%; }
+ .guide-expressions .copy-button { top: 12px; right: 12px; }
+ .guide-colors .color-palette { height: 510px; }
+ .guide-colors .color-card { flex-grow: 48; }
+ .guide-colors .color-card.is-expanded { flex-grow: 162; }
+ .current-guide .type-card { aspect-ratio: auto; height: 360px; border-radius: 20px; }
+ .current-guide .type-name { left: 24px; top: 32px; font-size: 26px; max-width: calc(100% - 76px); }
+ .current-guide .type-specimen { left: 24px; top: 114px; width: calc(100% - 48px); font-size: 20px; overflow-wrap: anywhere; }
+ .current-guide .type-watermark { top: auto; bottom: -10px; font-size: 26cqw; }
+ .current-guide .type-uncut .type-watermark { font-size: 27cqw; }
+}
+
+/* Each expression has its own quiet idle movement; bodies stay still. */
+.guide-expressions svg { display: block; height: auto; overflow: hidden; }
+.mascot-eye, .mascot-pupil { transform-box: fill-box; transform-origin: center; animation-timing-function: cubic-bezier(.77, 0, .175, 1); animation-delay: var(--eye-delay); animation-iteration-count: infinite; animation-fill-mode: both; animation-play-state: paused; }
+.mascot-orange .mascot-eye { animation-name: eye-blink; animation-duration: 3.2s; }
+.mascot-green .mascot-pupil { animation-name: pupil-side-eye; animation-duration: 3.8s; }
+.mascot-yellow .eye-0 { animation-name: eye-wink; animation-duration: 4.2s; }
+.mascot-blue .mascot-eye { animation-name: eye-smile; animation-duration: 3s; }
+.mascot-red .mascot-pupil { animation-name: pupil-look-up; animation-duration: 3.6s; }
+.mascot-purple .mascot-eye { animation-name: eye-squint; animation-duration: 4s; }
+.is-awake .mascot-eye, .is-awake .mascot-pupil { animation-play-state: running; }
+@keyframes eye-blink {
+  0%, 14%, 22%, 100% { transform: scaleY(1); }
+  18% { transform: scaleY(.08); }
+}
+@keyframes pupil-side-eye {
+  0%, 12%, 72%, 100% { transform: translateX(0); }
+  20%, 36% { transform: translateX(-9px); }
+  48%, 60% { transform: translateX(8px); }
+}
+@keyframes eye-wink {
+  0%, 12%, 32%, 100% { transform: scaleY(1); }
+  18%, 25% { transform: scaleY(.08); }
+}
+@keyframes eye-smile {
+  0%, 18%, 48%, 100% { transform: translateY(0) scaleY(1); }
+  28%, 36% { transform: translateY(-4px) scaleY(1.45); }
+}
+@keyframes pupil-look-up {
+  0%, 15%, 60%, 100% { transform: translate(0, 0); }
+  26%, 44% { transform: translate(5px, -11px); }
+}
+@keyframes eye-squint {
+  0%, 25%, 65%, 100% { transform: scale(1); }
+  38%, 50% { transform: scale(.85, .4); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mascot-art .mascot-eye, .mascot-art .mascot-pupil { animation: none; }
+}
+
+.guide-visual-language { display: flex; flex-direction: column; gap: var(--guide-gap); }
+.guide-visual-language img { display: block; width: 100%; height: auto; }
+
+/* Keep the download below the links in the sliding panel, including short screens. */
+.current-guide .menu-panel { display: flex; flex-direction: column; padding: 24px 20px; }
+.current-guide .menu-options { position: relative; top: auto; flex-shrink: 0; margin-block: auto; }
+.menu-footer { position: relative; z-index: 2; display: flex; justify-content: center; flex-shrink: 0; margin-top: 24px; padding-bottom: env(safe-area-inset-bottom, 0px); }
+.menu-download { font-family: 'Alte Haas Grotesk', sans-serif; font-weight: 400; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 14px 24px; border-radius: 999px; background: #000; color: #fff; text-decoration: none; font-size: 16px; line-height: 1.25; }
+@media (hover: hover) and (pointer: fine) {
+ .menu-download:hover { background: #333; }
+}
+@media (min-width: 768px) and (max-height: 800px) {
+ .current-guide .menu-row { height: 9vh; min-height: 48px; }
+ .current-guide .menu-option { font-size: clamp(36px, 7.5vh, 64px); }
+}
