@@ -102,10 +102,10 @@ export default function Menu({ open, onClose }) {
         ))}
       </nav>
       <div className="menu-footer">
-        <button className="menu-download" type="button" disabled title="Assets coming soon">
+        <a className="menu-download" href="/downloads/yolo-branding-assets.zip" download="Yolo Branding Assets.zip">
           <DownloadIcon />
           Download assets
-        </button>
+        </a>
       </div>
       </div>
       </div>

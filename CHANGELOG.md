@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-30
+
+- Connected both Download assets buttons to the supplied Yolo Branding Assets ZIP.
+
 ## 2026-09-28
 
 ### Polished

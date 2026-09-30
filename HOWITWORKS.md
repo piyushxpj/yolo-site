@@ -12,6 +12,6 @@ Logo and mascot copy buttons are removed. `Mascot.jsx` renders the original vect
 
 Run `npm run dev` for the local server and `npm run build` to produce `dist`. No backend is required.
 
-The hero and menu Download assets buttons are disabled placeholders until the user supplies the final ZIP. No ZIP is published.
+The hero and menu Download assets buttons download the user-supplied archive at `/downloads/yolo-branding-assets.zip`, saved as `Yolo Branding Assets.zip`.
 
 Page artwork uses 640/1280/1600px WebP variants generated with `python3 scripts/optimize-images.py` (requires cwebp). Original PNGs remain downloadable. Below-fold images start fetching early at low priority; the hero has high priority.
